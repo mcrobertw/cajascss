@@ -1,0 +1,36 @@
+<!-- 
+http://www.sidar.org/recur/desdi/traduc/es/css/box.html
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de márgenes, rellenos y bordes</title>
+	<style type="text/css">
+		ul{
+			background: green;
+			margin: 12px 100px 12px 12px;
+			/*		top   right botton left*/
+			padding: 3px 100px 3px 3px;
+		} /*No se especifica border*/
+		li{
+			color: black;
+			background: gray;
+			margin: 12px 12px 12px 12px;
+			padding: 12px 0px 12px 12px;
+			list-style: none;
+		}
+		li.withborder{ /*Pone el ancho de border para todos los lados*/
+			border-style: dashed;
+			border-width: medium;
+			border-color: black;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>El Primer Elemento</li>
+		<li class="withborder">El segundo elemento de la lista es más largo y se ajusta</li>
+	</ul>
+</body>
+</html>
